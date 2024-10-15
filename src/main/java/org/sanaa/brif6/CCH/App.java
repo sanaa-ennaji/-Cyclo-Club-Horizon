@@ -1,4 +1,4 @@
-package org.example;
+package org.sanaa.brif6.CCH;
 
 /**
  * Hello world!
