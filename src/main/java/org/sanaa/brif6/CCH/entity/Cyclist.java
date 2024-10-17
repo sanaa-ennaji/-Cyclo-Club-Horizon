@@ -1,5 +1,6 @@
 package org.sanaa.brif6.CCH.entity;
 
+import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,26 +12,20 @@ import javax.persistence.*;
 @Table(name = "cyclist")
 public  class Cyclist {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "name")
+    @Column(nullable = false)
     private String name;
 
-    @Column(name = "LastName")
+    @Column(nullable = false)
     private String  LastName ;
 
-    @Column(name = "nationality")
+    @Column(nullable = false)
     private String Nationality ;
 
-    @Column (name = "age")
+    @Column(nullable = false)
     private String  Age ;
-
-
-
-
-
-
 
 
 
