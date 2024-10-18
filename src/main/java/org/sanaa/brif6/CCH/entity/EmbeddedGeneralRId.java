@@ -6,16 +6,16 @@ import javax.persistence.ManyToOne;
 import java.io.Serializable;
 
 @Embeddable
-public class EmbeddedRId implements Serializable {
+public class EmbeddedGeneralRId implements Serializable {
+
 
     @ManyToOne
-    private Cyclist cyclist ;
+    @JoinColumn(name = "cyclist_id", nullable = false)
+    private Cyclist cyclist;
 
     @ManyToOne
+    @JoinColumn(name = "competition_id", nullable = false)
     private Competition competition;
-
-
-
 
 
 }

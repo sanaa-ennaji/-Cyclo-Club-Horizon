@@ -10,14 +10,14 @@ import javax.validation.constraints.NotBlank;
 @Getter
 @Setter
 @Entity
-@Table(name ="competetion")
+@Table(name = "competition")
 public class Competition {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id ;
     @NotBlank
-    @Column(unique = true)
+    @Column(unique = true , nullable = false)
     private String name;
 
     @Column(nullable = false)

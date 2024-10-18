@@ -4,9 +4,7 @@ import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.EmbeddedId;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.Duration;
 
 @Entity
@@ -15,12 +13,23 @@ import java.time.Duration;
 @Setter
 public class GenarlResult {
     @EmbeddedId
-    private EmbeddedRId id ;
+    private EmbeddedGeneralRId id ;
 
-    @NotNull
-    private String rank ;
+    @MapsId("cyclist")
+    @ManyToOne
+    @JoinColumn(name = "cyclist_id", insertable = false, updatable = false)
+    private Cyclist cyclist;
 
-    private Duration time ;
+    @MapsId("competition")
+    @ManyToOne
+    @JoinColumn(name = "competition_id", insertable = false, updatable = false)
+    private Competition competition;
+
+    @Column(nullable = false)
+    private String generalRank;
+
+    @Column(nullable = false)
+    private Duration time;
 
 
 

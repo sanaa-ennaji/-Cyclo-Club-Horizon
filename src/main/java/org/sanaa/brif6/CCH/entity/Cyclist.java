@@ -1,6 +1,6 @@
 package org.sanaa.brif6.CCH.entity;
 
-import com.sun.istack.NotNull;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,13 +19,13 @@ public  class Cyclist {
     private String name;
 
     @Column(nullable = false)
-    private String  LastName ;
+    private String lastName;
 
     @Column(nullable = false)
-    private String Nationality ;
+    private String nationality ;
 
     @Column(nullable = false)
-    private String  Age ;
+    private int age ;
 
 
 
