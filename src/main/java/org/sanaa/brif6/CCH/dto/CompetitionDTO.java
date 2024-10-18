@@ -15,6 +15,7 @@ public class CompetitionDTO {
     private LocalDate startDate;
     private LocalDate endDate;
     private List<StageDTO> stages;
+    // class umiable
 
 
 }
