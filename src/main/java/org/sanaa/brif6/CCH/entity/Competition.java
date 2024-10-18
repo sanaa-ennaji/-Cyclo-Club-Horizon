@@ -16,7 +16,7 @@ public class Competition {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id ;
+    private Long id ;
     @NotBlank
     @Column(unique = true , nullable = false)
     private String name;
