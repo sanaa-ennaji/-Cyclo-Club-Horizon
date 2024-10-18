@@ -35,4 +35,7 @@ public class Stage {
     @Column(nullable = false)
     private LocalDate startDate ;
 
+    @ManyToOne
+    @JoinColumn(name = "competition_id" , nullable = false)
+    private Competition competition ;
 }

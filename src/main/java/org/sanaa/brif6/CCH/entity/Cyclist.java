@@ -28,6 +28,11 @@ public  class Cyclist {
     private int age ;
 
 
+    @ManyToOne
+    @JoinColumn(name ="team_id" , nullable = false)
+    private Team team ;
+
+
 
 
 }

@@ -3,9 +3,9 @@ package org.sanaa.brif6.CCH.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+import java.util.List;
 
 @Getter
 @Setter
@@ -13,8 +13,18 @@ import javax.validation.constraints.NotBlank;
 @Table(name = "team")
 public class Team {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
     @NotBlank
+    @Column(nullable = false)
     private String teamName ;
+
+
+    @OneToMany(mappedBy = "competition" , cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Cyclist> cyclists ;
+
 
 
 }

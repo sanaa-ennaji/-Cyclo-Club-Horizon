@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 import javax.validation.constraints.NotBlank;
 
 @Getter
@@ -27,7 +28,8 @@ public class Competition {
     private LocalDate endDate ;
 
 
-
+   @OneToMany(mappedBy = "competition", cascade = CascadeType.ALL , orphanRemoval = true)
+    private List<Stage> stages;
 
 
 
