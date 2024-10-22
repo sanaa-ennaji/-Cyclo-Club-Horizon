@@ -16,8 +16,6 @@
         <property name="password" value="password" />
     </bean>
 
-
-
     <!-- Configure Hibernate JPA EntityManagerFactory -->
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="dataSource" />
