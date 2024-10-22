@@ -21,8 +21,6 @@ public  class Cyclist {
     @Column(nullable = false)
     private String lastName;
 
-    @Column(nullable = false)
-    private String nationality ;
 
     @Column(nullable = false)
     private int age ;

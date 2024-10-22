@@ -1,16 +1,13 @@
-package org.sanaa.brif6.CCH.dto;
-
+package org.sanaa.brif6.CCH.dto.Request;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.Duration;
-
 @Getter
 @Setter
-public class ResultDTO {
+public class ResultRequestDTO {
     private Long cyclistId;
     private Long stageId;
-    private Duration time;
     private String rank;
+    private String time;
 }
