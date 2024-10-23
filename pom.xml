@@ -92,31 +92,39 @@
       <version>${spring.version}</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- Lombok for generating getters/setters -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>RELEASE</version>
+      <version>1.18.34</version>
       <scope>provided</scope>
     </dependency>
 
+    <!-- Hibernate Validator for validation -->
     <dependency>
       <groupId>org.hibernate.validator</groupId>
       <artifactId>hibernate-validator</artifactId>
       <version>6.2.0.Final</version>
     </dependency>
 
+    <!-- MapStruct for mapping DTOs -->
     <dependency>
       <groupId>org.mapstruct</groupId>
       <artifactId>mapstruct</artifactId>
       <version>1.5.2.Final</version>
     </dependency>
 
+    <!-- MapStruct processor for compiling -->
     <dependency>
       <groupId>org.mapstruct</groupId>
       <artifactId>mapstruct-processor</artifactId>
       <version>1.5.2.Final</version>
       <scope>provided</scope>
     </dependency>
+
+
+
   </dependencies>
 
   <build>
