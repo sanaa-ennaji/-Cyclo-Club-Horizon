@@ -12,4 +12,5 @@ public class StageRequestDTO {
     private String startPoint;
     private String endPoint;
     private LocalDate startDate;
+
 }

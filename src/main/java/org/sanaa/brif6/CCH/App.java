@@ -9,36 +9,57 @@ import org.sanaa.brif6.CCH.config.AppConfig;
 
 import java.time.LocalDate;
 
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main(String[] args) {
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        CompetitionServiceI competitionService = context.getBean(CompetitionServiceI.class);
+            ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        CompetitionRequestDTO requestDTO = new CompetitionRequestDTO();
-        try {
-            requestDTO.setName("france");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+            CompetitionServiceI competitionService = context.getBean(CompetitionServiceI.class);
+            
+            CompetitionRequestDTO competitionRequest = new CompetitionRequestDTO();
+            competitionRequest.setName("Spring Championship");
+            competitionRequest.setStartDate(LocalDate.of(2024, 1, 1));
+            competitionRequest.setEndDate(LocalDate.of(2024, 1, 10));
+
+            CompetitionResponseDTO savedCompetitionResponse = competitionService.create(competitionRequest);
+
+            System.out.println("Saved Competition: ");
         }
-        try {
-            requestDTO.setStartDate(LocalDate.parse("2024-3-3"));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        requestDTO.setEndDate(LocalDate.parse("2024-5-4"));
-
-        CompetitionResponseDTO responseDTO = competitionService.create(requestDTO);
-
-
-
-
-
-
-
-        System.out.println( "Hello World!" );
-    }
 }
+
+
+
+//public class App
+//{
+//    public static void main( String[] args )
+//    {
+//
+//        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+//
+//        CompetitionServiceI competitionService = context.getBean(CompetitionServiceI.class);
+//
+//        CompetitionRequestDTO requestDTO = new CompetitionRequestDTO();
+//        try {
+//            requestDTO.setName("france");
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
+//        try {
+//            requestDTO.setStartDate(LocalDate.parse("2024-3-3"));
+//        } catch (Exception e) {
+//            throw new RuntimeException(e);
+//        }
+//        requestDTO.setEndDate(LocalDate.parse("2024-5-4"));
+//
+//        CompetitionResponseDTO responseDTO = competitionService.create(requestDTO);
+//
+//
+//
+//
+//
+//
+//
+//        System.out.println( "Hello World!" );
+//    }
+//}

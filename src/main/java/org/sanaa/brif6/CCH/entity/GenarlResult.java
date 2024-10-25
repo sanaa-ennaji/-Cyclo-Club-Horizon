@@ -1,6 +1,5 @@
 package org.sanaa.brif6.CCH.entity;
 
-import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
