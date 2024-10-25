@@ -4,43 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="303ee1df-fd95-485d-90fc-674737ded8e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/CyclistRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/GeneralResultRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/ResultRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/StageRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/TeamRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/CyclistResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/GeneralResultResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/ResultResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/StageResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/TeamResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/GeneralResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Stage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/embedded/EmbeddedGeneralResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/embedded/EmbeddedResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/CyclistMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/GeneralResultMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/ResultMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/StageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/CyclistRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/GeneralResultRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/ResultRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/StageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/TeamRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CyclistService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/CyclistServiceI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/StageServiceI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/TeamServiceI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/StageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/TeamService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git.sh" beforeDir="false" afterPath="$PROJECT_DIR$/git.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Competition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Cyclist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Cyclist.java" afterDir="false" />
-    </list>
+    <list default="true" id="303ee1df-fd95-485d-90fc-674737ded8e3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729855207400</updated>
       <workItem from="1729855209352" duration="7893000" />
-      <workItem from="1729872539897" duration="3534000" />
+      <workItem from="1729872539897" duration="3955000" />
     </task>
     <servers />
   </component>
