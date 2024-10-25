@@ -5,8 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="303ee1df-fd95-485d-90fc-674737ded8e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Cyclist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/CyclistRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/GeneralResultRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/ResultRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/StageRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/TeamRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/CyclistResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/GeneralResultResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/ResultResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/StageResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/TeamResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/GeneralResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Stage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/embedded/EmbeddedGeneralResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/embedded/EmbeddedResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/CyclistMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/GeneralResultMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/ResultMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/StageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/CyclistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/GeneralResultRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/ResultRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/StageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/TeamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CyclistService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/CyclistServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/StageServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/TeamServiceI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/StageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/TeamService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git.sh" beforeDir="false" afterPath="$PROJECT_DIR$/git.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Competition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Cyclist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Cyclist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,11 +57,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2nvYpXnfd79o3pGAHcrnBNvKjou" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,6 +86,7 @@
     "Maven.CCH [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat Server.Tomcat 10.1.30.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -49,7 +97,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.applicationServers",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -155,11 +203,15 @@
       <option name="presentableId" value="Default" />
       <updated>1729855207400</updated>
       <workItem from="1729855209352" duration="7893000" />
-      <workItem from="1729872539897" duration="155000" />
+      <workItem from="1729872539897" duration="3534000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

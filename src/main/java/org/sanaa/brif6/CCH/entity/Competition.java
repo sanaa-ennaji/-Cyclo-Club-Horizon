@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -27,8 +28,8 @@ public class Competition {
     private LocalDate endDate ;
 
 
-//    @OneToMany(mappedBy = "competition", cascade = CascadeType.ALL , orphanRemoval = true)
-//    private List<MessageFlow.Stage> stages;
+    @OneToMany(mappedBy = "competition", cascade = CascadeType.ALL , orphanRemoval = true)
+    private List<Stage> stages;
 
 
 }
