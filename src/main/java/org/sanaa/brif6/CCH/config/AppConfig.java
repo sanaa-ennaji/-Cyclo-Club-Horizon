@@ -18,7 +18,6 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
-@EnableWebMvc
 @EnableJpaRepositories(basePackages = "org.sanaa.brif6.CCH")
 @ComponentScan("org.sanaa.brif6.CCH")
 @EnableTransactionManagement
@@ -44,7 +43,7 @@ public class AppConfig {
         LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
         factoryBean.setJpaVendorAdapter(vendorAdapter);
         factoryBean.setDataSource(dataSource());
-        factoryBean.setPackagesToScan("org.sanaa.brif6.CCH.entities");
+        factoryBean.setPackagesToScan("org.sanaa.brif6.CCH.entity");
 
         Properties jpaProperties = new Properties();
         jpaProperties.put("hibernate.hbm2ddl.auto", "update");

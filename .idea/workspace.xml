@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="303ee1df-fd95-485d-90fc-674737ded8e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/controller/CyclistServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/CompetitionRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/CompetitionResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Competition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/CompetitionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/repository/CompetetionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CompetitionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/CompetitionServiceI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git.sh" beforeDir="false" afterPath="$PROJECT_DIR$/git.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/AppConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +37,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -75,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729855207400</updated>
-      <workItem from="1729855209352" duration="4397000" />
+      <workItem from="1729855209352" duration="5856000" />
     </task>
     <servers />
   </component>
