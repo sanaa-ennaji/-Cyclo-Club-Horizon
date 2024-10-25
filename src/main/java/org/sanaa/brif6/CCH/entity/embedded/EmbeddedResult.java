@@ -19,4 +19,23 @@ public class EmbeddedResult  implements Serializable {
     @JoinColumn(name = "stage_id" ,nullable = false)
     private Stage stage;
 
+
+
+    public Long getCyclistId() {
+        return cyclist != null ? cyclist.getId() : null;
+    }
+
+    public Long getStageId() {
+        return stage != null ? stage.getId() : null;
+    }
+
+
+    public void setCyclist(Cyclist cyclist) {
+        this.cyclist = cyclist;
+    }
+
+
+    public void setStage(Stage stage) {
+        this.stage = stage;
+    }
 }
