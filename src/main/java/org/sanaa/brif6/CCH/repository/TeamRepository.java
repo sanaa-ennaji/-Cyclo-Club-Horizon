@@ -1,4 +1,7 @@
 package org.sanaa.brif6.CCH.repository;
 
-public interface TeamRepository {
+import org.sanaa.brif6.CCH.entity.Team;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TeamRepository extends JpaRepository<Team, Long> {
 }

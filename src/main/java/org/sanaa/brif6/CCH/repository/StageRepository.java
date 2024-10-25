@@ -1,4 +1,6 @@
 package org.sanaa.brif6.CCH.repository;
 
-public interface StageRepository {
+import org.sanaa.brif6.CCH.entity.Stage;
+
+public interface StageRepository extends JpaRepository <Stage, Long>{
 }
