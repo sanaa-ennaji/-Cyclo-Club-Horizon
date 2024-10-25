@@ -24,7 +24,7 @@ import org.springframework.stereotype.Service;
         {
             this.competitionRepository = competitionRepository;
         }
-
+        @Override
         public CompetitionResponseDTO create (CompetitionRequestDTO requestDTO){
             Competition competition =competitionMapper.toEntity(requestDTO);
             competition = competitionRepository.save(competition);
