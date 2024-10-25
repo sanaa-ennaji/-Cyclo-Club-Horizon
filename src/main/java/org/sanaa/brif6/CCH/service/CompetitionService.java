@@ -11,6 +11,10 @@ import org.sanaa.brif6.CCH.service.Interface.CompetitionServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 @Service
     @Transactional
     public class CompetitionService implements CompetitionServiceI {
@@ -30,5 +34,42 @@ import org.springframework.stereotype.Service;
             competition = competitionRepository.save(competition);
             return competitionMapper.toResponseDTO(competition);
         }
+
+
+    @Override
+    public CompetitionResponseDTO getCompetitionById(Long id) {
+        Optional<Competition> competition = competitionRepository.findById(id);
+        return competition.map(competitionMapper::toResponseDTO).orElse(null); // Handle not found case
+    }
+
+    @Override
+    public List<CompetitionResponseDTO> getAllCompetitions() {
+        List<Competition> competitions = competitionRepository.findAll();
+        return competitions.stream()
+                .map(competitionMapper::toResponseDTO)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public CompetitionResponseDTO updateCompetition(Long id, CompetitionRequestDTO requestDTO) {
+        Optional<Competition> existingCompetition = competitionRepository.findById(id);
+
+        if (existingCompetition.isPresent()) {
+            Competition competitionToUpdate = existingCompetition.get();
+            competitionToUpdate.setName(requestDTO.getName());
+          //  competitionToUpdate.setDescription(requestDTO.getDescription());
+            competitionToUpdate.setStartDate(requestDTO.getStartDate());
+            competitionToUpdate.setEndDate(requestDTO.getEndDate());
+            competitionRepository.save(competitionToUpdate);
+
+            return competitionMapper.toResponseDTO(competitionToUpdate);
+        }
+        return null;
+    }
+
+    @Override
+    public void deleteCompetition(Long id) {
+        competitionRepository.deleteById(id);
+    }
 
     }
