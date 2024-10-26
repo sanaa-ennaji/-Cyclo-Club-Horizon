@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="303ee1df-fd95-485d-90fc-674737ded8e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/TeamServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/TeamServiceI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729855207400</updated>
       <workItem from="1729855209352" duration="7893000" />
-      <workItem from="1729872539897" duration="12087000" />
+      <workItem from="1729872539897" duration="12948000" />
     </task>
     <servers />
   </component>
