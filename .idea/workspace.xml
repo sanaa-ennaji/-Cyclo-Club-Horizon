@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CCH:war" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="303ee1df-fd95-485d-90fc-674737ded8e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/DispatcherServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/StageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/TeamController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web.xml.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/WebAppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/ResultMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/ResultMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CompetitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CompetitionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/CompetitionServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/CompetitionServiceI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CompetitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CompetitionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,18 +39,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Exception" />
+        <option value="HTTP Public Environment File" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -51,6 +75,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Maven.CCH [clean,install].executor": "Run",
     "Maven.CCH [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -72,14 +97,27 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.30" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment />
+      <deployment>
+        <artifact name="CCH:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/CCH_war" />
+          </settings>
+        </artifact>
+        <artifact name="CCH:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/CCH_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="8ea73baa-69c9-40df-a2fb-15a79c3b2ad0" />
+        <option name="BASE_DIRECTORY_NAME" value="8e24aa4a-e699-4d74-8b29-640bb74a366b" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -87,7 +125,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55962" />
+        <option name="DEBUG_PORT" value="58279" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -151,6 +189,10 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="CCH:war" />
+          <artifact name="CCH:war exploded" />
+        </option>
       </method>
     </configuration>
   </component>
@@ -172,6 +214,7 @@
       <updated>1729855207400</updated>
       <workItem from="1729855209352" duration="7893000" />
       <workItem from="1729872539897" duration="12948000" />
+      <workItem from="1729961418797" duration="12295000" />
     </task>
     <servers />
   </component>

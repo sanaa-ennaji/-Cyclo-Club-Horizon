@@ -24,7 +24,6 @@ public interface ResultMapper {
         return embeddedResult.getCyclistId();
     }
 
-
     default EmbeddedResult map(Long cyclistId, Long stageId) {
         EmbeddedResult embeddedResult = new EmbeddedResult();
         Cyclist cyclist = new Cyclist();

@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.sanaa.brif6.CCH.entity.embedded.EmbeddedResult;
 
 import java.time.Duration;
+@Entity
 @Getter
 @Setter
 @Table(name = "result")

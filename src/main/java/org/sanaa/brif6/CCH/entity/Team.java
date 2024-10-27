@@ -23,8 +23,10 @@ public class Team {
     @NotBlank
     @Column(nullable = false)
     private String nationality ;
-    @OneToMany(mappedBy = "competition" , cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Cyclist> cyclists ;
+    @OneToMany(mappedBy = "team", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Cyclist> cyclists;
+
+
 
 
 

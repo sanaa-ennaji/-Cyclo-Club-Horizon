@@ -14,16 +14,14 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        // Retrieve the CompetitionService bean
         CompetitionServiceI competitionService = context.getBean(CompetitionServiceI.class);
 
-        // Prepare the request DTO
         CompetitionRequestDTO requestDTO = new CompetitionRequestDTO();
         requestDTO.setName("France Tour");
         requestDTO.setStartDate(LocalDate.parse("2024-03-03"));
         requestDTO.setEndDate(LocalDate.parse("2024-05-04"));
 
-        // Call the create method in the CompetitionService and get the response DTO
+
         CompetitionResponseDTO responseDTO = competitionService.create(requestDTO);
 
 

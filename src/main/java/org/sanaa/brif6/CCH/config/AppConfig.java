@@ -17,8 +17,9 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import javax.sql.DataSource;
 import java.util.Properties;
 
+@EnableWebMvc
 @Configuration
-@EnableJpaRepositories(basePackages = "org.sanaa.brif6.CCH")
+@EnableJpaRepositories(basePackages = "org.sanaa.brif6.CCH.repository")
 @ComponentScan("org.sanaa.brif6.CCH")
 @EnableTransactionManagement
 public class AppConfig {
@@ -61,13 +62,14 @@ public class AppConfig {
         tx.setEntityManagerFactory(entityManagerFactory);
         return tx;
     }
-//    @Bean
-//    public InternalResourceViewResolver viewResolver() {
-//        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-//        resolver.setPrefix("/WEB-INF/views/");
-//        resolver.setSuffix(".jsp");
-//        return resolver;
-//    }
+    @Bean
+    public InternalResourceViewResolver viewResolver() {
+        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+        resolver.setPrefix("/WEB-INF/views/");
+        resolver.setSuffix(".jsp");
+        return resolver;
+    }
+
 
 
 }

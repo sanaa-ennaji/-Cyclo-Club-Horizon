@@ -37,16 +37,10 @@ L'application est destinée à être utilisée par le Cyclo Club Horizon pour or
 - **Spring IoC** : gestion des dépendances
 - **Hibernate** : persistance des données
 
-### Couche DAO avec Hibernate
-- Utiliser `SessionFactory` pour gérer les sessions Hibernate
-- Gérer les transactions avec Hibernate et Spring
-- Implémenter un DAO générique pour les opérations CRUD
-
 ### Configuration Spring
 L'application doit inclure les trois types de configurations Spring :
-1. **XML** : Pour la persistance (Hibernate, source de données)
-2. **Annotations** : Utilisation de `@Component`, `@Service`, `@Repository`, `@Autowired`
-3. **Java Configuration** : Utilisation de `@Configuration` pour déclarer des beans
+1. **Annotations** : Utilisation de `@Component`, `@Service`, `@Repository`, `@Autowired`
+2. **Java Configuration** : Utilisation de `@Configuration` pour déclarer des beans
 
 ### API REST
 - Utiliser **Spring MVC** pour la couche web
@@ -105,5 +99,3 @@ L'application doit inclure les trois types de configurations Spring :
 - **JPA**, **Hibernate**, **Spring IoC**, **JUnit**, **Mockito**
 - **Spring MVC**, **Tomcat**, **ModelMapper**, **MapStruct**
 - **Postman**, **DTO**
-
-```
