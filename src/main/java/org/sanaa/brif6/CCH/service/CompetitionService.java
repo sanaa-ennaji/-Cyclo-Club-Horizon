@@ -34,40 +34,39 @@ public class CompetitionService implements CompetitionServiceI {
         }
 
 
-//    @Override
-//    public CompetitionResponseDTO getCompetitionById(Long id) {
-//        Optional<Competition> competition = competitionRepository.findById(id);
-//        return competition.map(competitionMapper::toResponseDTO).orElse(null); // Handle not found case
-//    }
-//
-//    @Override
-//    public List<CompetitionResponseDTO> getAllCompetitions() {
-//        List<Competition> competitions = competitionRepository.findAll();
-//        return competitions.stream()
-//                .map(competitionMapper::toResponseDTO)
-//                .collect(Collectors.toList());
-//    }
-//
-//    @Override
-//    public CompetitionResponseDTO updateCompetition(Long id, CompetitionRequestDTO requestDTO) {
-//        Optional<Competition> existingCompetition = competitionRepository.findById(id);
-//
-//        if (existingCompetition.isPresent()) {
-//            Competition competitionToUpdate = existingCompetition.get();
-//            competitionToUpdate.setName(requestDTO.getName());
-//          //  competitionToUpdate.setDescription(requestDTO.getDescription());
-//            competitionToUpdate.setStartDate(requestDTO.getStartDate());
-//            competitionToUpdate.setEndDate(requestDTO.getEndDate());
-//            competitionRepository.save(competitionToUpdate);
-//
-//            return competitionMapper.toResponseDTO(competitionToUpdate);
-//        }
-//        return null;
-//    }
-//
-//    @Override
-//    public void deleteCompetition(Long id) {
-//        competitionRepository.deleteById(id);
-//    }
+    @Override
+    public CompetitionResponseDTO getById(Long id) {
+        Optional<Competition> competition = competitionRepository.findById(id);
+        return competition.map(competitionMapper::toResponseDTO).orElse(null); // Handle not found case
+    }
+
+    @Override
+    public List<CompetitionResponseDTO> getAll() {
+        List<Competition> competitions = competitionRepository.findAll();
+        return competitions.stream()
+                .map(competitionMapper::toResponseDTO)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public CompetitionResponseDTO update(Long id, CompetitionRequestDTO requestDTO) {
+        Optional<Competition> existingCompetition = competitionRepository.findById(id);
+
+        if (existingCompetition.isPresent()) {
+            Competition competitionToUpdate = existingCompetition.get();
+            competitionToUpdate.setName(requestDTO.getName());
+            competitionToUpdate.setStartDate(requestDTO.getStartDate());
+            competitionToUpdate.setEndDate(requestDTO.getEndDate());
+            competitionRepository.save(competitionToUpdate);
+
+            return competitionMapper.toResponseDTO(competitionToUpdate);
+        }
+        return null;
+    }
+
+    @Override
+    public void delete(Long id) {
+        competitionRepository.deleteById(id);
+    }
 
     }

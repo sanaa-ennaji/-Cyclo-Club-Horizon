@@ -8,11 +8,11 @@ import java.util.List;
 public interface CompetitionServiceI {
     CompetitionResponseDTO create (CompetitionRequestDTO requestDTO);
 
-//    CompetitionResponseDTO getCompetitionById(Long id);
-//
-//    List<CompetitionResponseDTO> getAllCompetitions();
-//
-//    CompetitionResponseDTO updateCompetition(Long id, CompetitionRequestDTO requestDTO);
-//
-//    void deleteCompetition(Long id);
+    CompetitionResponseDTO getById(Long id);
+
+    List<CompetitionResponseDTO> getAll();
+
+    CompetitionResponseDTO update(Long id, CompetitionRequestDTO requestDTO);
+
+    void delete(Long id);
 }
