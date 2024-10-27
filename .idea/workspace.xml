@@ -3,6 +3,7 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="CCH:war" />
+      <artifact name="CCH:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,25 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="303ee1df-fd95-485d-90fc-674737ded8e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/DispatcherServletConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/StageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/TeamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/web.xml.old" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/WebAppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/ResultMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/ResultMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CompetitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CompetitionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/CompetitionServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/CompetitionServiceI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CompetitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CompetitionController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +25,8 @@
         <option value="Interface" />
         <option value="Exception" />
         <option value="HTTP Public Environment File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,7 +71,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
@@ -105,7 +89,7 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="CCH:war">
+        <artifact name="CCH_war:war">
           <settings>
             <option name="CONTEXT_PATH" value="/CCH_war" />
           </settings>
@@ -190,7 +174,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="CCH:war" />
+          <artifact name="CCH_war:war" />
           <artifact name="CCH:war exploded" />
         </option>
       </method>
@@ -214,7 +198,7 @@
       <updated>1729855207400</updated>
       <workItem from="1729855209352" duration="7893000" />
       <workItem from="1729872539897" duration="12948000" />
-      <workItem from="1729961418797" duration="12295000" />
+      <workItem from="1729961418797" duration="13408000" />
     </task>
     <servers />
   </component>
