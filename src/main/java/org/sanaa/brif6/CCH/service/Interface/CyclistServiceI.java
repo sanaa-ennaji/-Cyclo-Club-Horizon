@@ -8,8 +8,8 @@ import java.util.List;
 public interface CyclistServiceI {
 
     CyclistResponseDTO create (CyclistRequestDTO requestDTO);
-    CyclistResponseDTO get (Long id);
-    List<CyclistResponseDTO> getALL ();
+    CyclistResponseDTO getById (Long id);
+    List<CyclistResponseDTO> getAll ();
     CyclistResponseDTO update (Long id , CyclistRequestDTO requestDTO);
     void delete (Long id);
 }
