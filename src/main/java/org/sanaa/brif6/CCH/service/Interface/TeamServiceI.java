@@ -10,7 +10,7 @@ public interface TeamServiceI {
 
     TeamResponseDTO create (TeamRequestDTO requestDTO);
     TeamResponseDTO  get (Long id);
-    List<TeamRequestDTO> getALL ();
+    List<TeamRequestDTO> getAll ();
     TeamResponseDTO update (Long id , TeamRequestDTO requestDTO);
     void  delete (Long id);
 

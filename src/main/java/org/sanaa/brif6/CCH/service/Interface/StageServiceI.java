@@ -9,7 +9,7 @@ public interface StageServiceI {
 
     StageResponseDTO create (StageResponseDTO requestDTO);
     StageResponseDTO get (Long id);
-    List<StageResponseDTO> getALL ();
+    List<StageResponseDTO> getAll ();
     StageResponseDTO update (Long id , StageRequestDTO requestDTO);
     void delete (Long id);
 }
