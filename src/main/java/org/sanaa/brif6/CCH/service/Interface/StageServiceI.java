@@ -7,9 +7,9 @@ import java.util.List;
 
 public interface StageServiceI {
 
-    StageResponseDTO create (StageResponseDTO requestDTO);
-    StageResponseDTO get (Long id);
+    StageResponseDTO create(StageRequestDTO requestDTO);
+    StageResponseDTO getById(Long id);
+
     List<StageResponseDTO> getAll ();
-    StageResponseDTO update (Long id , StageRequestDTO requestDTO);
     void delete (Long id);
 }
