@@ -9,7 +9,7 @@ import java.util.List;
 public interface ResultServiceI {
 
     ResultResponseDTO create (ResultRequestDTO requestDTO);
-    ResultResponseDTO getById (Long id);
+    ResultResponseDTO getById (Long cyclistId, Long stageId);
     List<ResultResponseDTO> getAll ();
-    void delete (Long id);
+    void delete (Long cyclistId, Long stageId);
 }

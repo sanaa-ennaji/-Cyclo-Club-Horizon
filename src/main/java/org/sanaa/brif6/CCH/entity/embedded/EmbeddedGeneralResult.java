@@ -19,5 +19,23 @@ public class EmbeddedGeneralResult implements Serializable {
     @JoinColumn(name = "competition_id", nullable = false)
     private Competition competition;
 
+    public EmbeddedGeneralResult() {}
+
+
+    public Cyclist getCyclist() {
+        return cyclist;
+    }
+
+    public void setCyclist(Cyclist cyclist) {
+        this.cyclist = cyclist;
+    }
+
+    public Competition getCompetition() {
+        return competition;
+    }
+
+    public void setCompetition(Competition competition) {
+        this.competition = competition;
+    }
 
 }
