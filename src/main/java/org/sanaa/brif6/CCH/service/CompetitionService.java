@@ -57,12 +57,10 @@ public class CompetitionService implements CompetitionServiceI {
             competitionToUpdate.setStartDate(requestDTO.getStartDate());
             competitionToUpdate.setEndDate(requestDTO.getEndDate());
             competitionRepository.save(competitionToUpdate);
-
             return competitionMapper.toResponseDTO(competitionToUpdate);
         }
         return null;
     }
-
 //    @Override
 //    public CompetitionResponseDTO update2(Long id, CompetitionRequestDTO requestDTO) {
 //        Competition competition = competitionRepository.findById(id)

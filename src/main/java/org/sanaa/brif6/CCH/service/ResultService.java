@@ -31,6 +31,7 @@ public class ResultService  implements ResultServiceI {
     private final ResultRepository resultRepository;
     private final ResultMapper resultMapper ;
     private final StageRepository stageRepository;
+
     @Override
     public ResultResponseDTO create(ResultRequestDTO requestDTO) {
         Cyclist cyclist = cyclistRepository.findById(requestDTO.getCyclistId())

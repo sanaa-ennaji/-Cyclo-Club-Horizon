@@ -11,18 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="303ee1df-fd95-485d-90fc-674737ded8e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/CyclistRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/CyclistRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/StageRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/StageRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Competition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/CyclistMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/CyclistMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/ResultResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Response/ResultResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/ResultMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/ResultMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CompetitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CompetitionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CyclistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CyclistService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/ResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/ResultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/StageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/StageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CyclistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CyclistController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/StageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/StageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/CyclistServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/CyclistServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +204,7 @@
       <updated>1729855207400</updated>
       <workItem from="1729855209352" duration="7893000" />
       <workItem from="1729872539897" duration="12948000" />
-      <workItem from="1729961418797" duration="67485000" />
+      <workItem from="1729961418797" duration="77084000" />
     </task>
     <servers />
   </component>
