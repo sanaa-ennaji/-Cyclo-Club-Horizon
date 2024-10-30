@@ -9,9 +9,8 @@ import java.util.List;
 public interface TeamServiceI {
 
     TeamResponseDTO create (TeamRequestDTO requestDTO);
-    TeamResponseDTO  get (Long id);
-    List<TeamRequestDTO> getAll ();
-    TeamResponseDTO update (Long id , TeamRequestDTO requestDTO);
+    TeamResponseDTO  getById (Long id);
+    List<TeamResponseDTO> getAll ();
     void  delete (Long id);
 
 

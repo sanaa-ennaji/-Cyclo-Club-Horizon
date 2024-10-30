@@ -37,7 +37,7 @@ public class CompetitionService implements CompetitionServiceI {
     @Override
     public CompetitionResponseDTO getById(Long id) {
         Optional<Competition> competition = competitionRepository.findById(id);
-        return competition.map(competitionMapper::toResponseDTO).orElse(null); // Handle not found case
+        return competition.map(competitionMapper::toResponseDTO).orElse(null);
     }
 
     @Override
