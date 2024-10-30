@@ -3,7 +3,6 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="CCH:war exploded" />
-      <artifact name="CCH_war:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -12,9 +11,18 @@
   <component name="ChangeListManager">
     <list default="true" id="303ee1df-fd95-485d-90fc-674737ded8e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/CyclistRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/CyclistRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/StageRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/dto/Request/StageRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Competition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/entity/Competition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/CyclistMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/mapper/CyclistMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CompetitionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CompetitionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/CompetitionServiceI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/Interface/CompetitionServiceI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CompetitionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CompetitionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CyclistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/CyclistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/ResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/ResultService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/StageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/service/StageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CyclistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/CyclistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/StageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/sanaa/brif6/CCH/web/StageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/CyclistServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/CyclistServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,10 +32,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Exception" />
         <option value="HTTP Public Environment File" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -46,6 +54,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -63,6 +74,7 @@
     "Application.Main.executor": "Run",
     "Maven.CCH [clean,install].executor": "Run",
     "Maven.CCH [clean].executor": "Run",
+    "Maven.CCH [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Tomcat Server.Tomcat 10.1.30.executor": "Run",
@@ -73,7 +85,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
@@ -83,27 +95,29 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
+      <command value="mvn test" />
       <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="excludedTypes">
+      <set>
+        <option value="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" />
+      </set>
     </option>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.30" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.30" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="CCH_war:war">
+        <artifact name="CCH:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/CCH_war" />
           </settings>
         </artifact>
-        <artifact name="CCH:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/CCH_war_exploded" />
-          </settings>
-        </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="8e24aa4a-e699-4d74-8b29-640bb74a366b" />
+        <option name="BASE_DIRECTORY_NAME" value="2010fd04-5dc8-49bf-af22-f6ae882c0c21" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -111,7 +125,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="58279" />
+        <option name="DEBUG_PORT" value="63958" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -176,7 +190,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="CCH_war:war" />
           <artifact name="CCH:war exploded" />
         </option>
       </method>
@@ -200,7 +213,7 @@
       <updated>1729855207400</updated>
       <workItem from="1729855209352" duration="7893000" />
       <workItem from="1729872539897" duration="12948000" />
-      <workItem from="1729961418797" duration="16551000" />
+      <workItem from="1729961418797" duration="67485000" />
     </task>
     <servers />
   </component>
@@ -210,5 +223,8 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CCH$Tomcat_10_1_30.ic" NAME="Tomcat 10.1.30 Coverage Results" MODIFIED="1730296102345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>

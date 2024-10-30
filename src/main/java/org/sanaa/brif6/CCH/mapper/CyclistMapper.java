@@ -10,9 +10,4 @@ public interface CyclistMapper {
     Cyclist toEntity(CyclistRequestDTO cyclistRequestDTO);
     CyclistResponseDTO toResponseDTO(Cyclist cyclist);
 
-
-
-
-
-
 }

@@ -10,5 +10,6 @@ public class CyclistRequestDTO {
     private String name ;
     private String lastName;
     private int age;
+    private Long teamId;
 
 }

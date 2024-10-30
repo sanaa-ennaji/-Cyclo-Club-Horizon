@@ -22,15 +22,15 @@ import java.util.stream.Collectors;
 @Transactional
 public class CompetitionService implements CompetitionServiceI {
 
-        private final CompetetionRepository competitionRepository;
-        private final CompetitionMapper competitionMapper = Mappers.getMapper(CompetitionMapper.class);
+    private final CompetetionRepository competitionRepository;
+    private final CompetitionMapper competitionMapper;
 
-        @Override
-        public CompetitionResponseDTO create (CompetitionRequestDTO requestDTO){
-            Competition competition =competitionMapper.toEntity(requestDTO);
-            competition = competitionRepository.save(competition);
-            return competitionMapper.toResponseDTO(competition);
-        }
+    @Override
+    public CompetitionResponseDTO create(CompetitionRequestDTO requestDTO) {
+        Competition competition = competitionMapper.toEntity(requestDTO);
+        competition = competitionRepository.save(competition);
+        return competitionMapper.toResponseDTO(competition);
+    }
 
 
     @Override
@@ -63,9 +63,21 @@ public class CompetitionService implements CompetitionServiceI {
         return null;
     }
 
+//    @Override
+//    public CompetitionResponseDTO update2(Long id, CompetitionRequestDTO requestDTO) {
+//        Competition competition = competitionRepository.findById(id)
+//                .orElseThrow(() -> new RuntimeException("competition not found"));
+//
+//        competition.setName(requestDTO.getName())
+//                .setStartDate(requestDTO.getStartDate())
+//                .setEndDate(requestDTO.getEndDate());
+//
+//        return competitionMapper.toResponseDTO(competition);
+//    }
+
     @Override
     public void delete(Long id) {
         competitionRepository.deleteById(id);
     }
 
-    }
+}

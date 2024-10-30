@@ -1,14 +1,16 @@
 package org.sanaa.brif6.CCH.service;
 
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.mapstruct.factory.Mappers;
 import org.sanaa.brif6.CCH.dto.Request.CyclistRequestDTO;
 import org.sanaa.brif6.CCH.dto.Response.CyclistResponseDTO;
 import org.sanaa.brif6.CCH.entity.Cyclist;
+import org.sanaa.brif6.CCH.entity.Team;
 import org.sanaa.brif6.CCH.mapper.CyclistMapper;
 import org.sanaa.brif6.CCH.repository.CyclistRepository;
 
+import org.sanaa.brif6.CCH.repository.TeamRepository;
 import org.sanaa.brif6.CCH.service.Interface.CyclistServiceI;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
@@ -24,14 +26,20 @@ import java.util.stream.Collectors;
 public class CyclistService implements CyclistServiceI {
 
     private final CyclistRepository cyclistRepository;
-    private final CyclistMapper cyclistMapper = Mappers.getMapper(CyclistMapper.class);
+    private final CyclistMapper cyclistMapper;
+    private final TeamRepository teamRepository;
 
     @Override
     public CyclistResponseDTO create(CyclistRequestDTO requestDTO) {
-        Cyclist cyclist = cyclistMapper.toEntity(requestDTO);
-        cyclist = cyclistRepository.save(cyclist);
-        return cyclistMapper.toResponseDTO(cyclist);
+        final Team team = teamRepository.findById(requestDTO.getTeamId())
+                .orElseThrow(() -> new EntityNotFoundException("Team with ID " + requestDTO.getTeamId() + " not found."));
+        final Cyclist cyclist = cyclistMapper.toEntity(requestDTO);
+        cyclist.setTeam(team);
+
+        final Cyclist savedCyclist = cyclistRepository.save(cyclist);
+        return cyclistMapper.toResponseDTO(savedCyclist);
     }
+
 
 
     @Override
@@ -67,7 +75,4 @@ public class CyclistService implements CyclistServiceI {
     public void delete(Long id) {
         cyclistRepository.deleteById(id);
     }
-
-
-
 }

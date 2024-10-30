@@ -17,14 +17,14 @@ public class CyclistController {
 
     private final CyclistServiceI cyclistService;
 
-    @PostMapping
-    public ResponseEntity<CyclistResponseDTO> createCyclist(@RequestBody CyclistRequestDTO requestDTO) {
+    @PostMapping("/create")
+    public ResponseEntity<CyclistResponseDTO> create(@RequestBody CyclistRequestDTO requestDTO) {
         CyclistResponseDTO responseDTO = cyclistService.create(requestDTO);
         return new ResponseEntity<>(responseDTO, HttpStatus.CREATED);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<CyclistResponseDTO> getCyclistById(@PathVariable Long id) {
+    public ResponseEntity<CyclistResponseDTO> getById(@PathVariable Long id) {
         CyclistResponseDTO responseDTO = cyclistService.getById(id);
         if (responseDTO != null) {
             return new ResponseEntity<>(responseDTO, HttpStatus.OK);
@@ -34,13 +34,13 @@ public class CyclistController {
     }
 
     @GetMapping
-    public ResponseEntity<List<CyclistResponseDTO>> getAllCyclists() {
+    public ResponseEntity<List<CyclistResponseDTO>> getAll() {
         List<CyclistResponseDTO> cyclists = cyclistService.getAll();
         return new ResponseEntity<>(cyclists, HttpStatus.OK);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<CyclistResponseDTO> updateCyclist(
+    public ResponseEntity<CyclistResponseDTO> update(
             @PathVariable Long id, @RequestBody CyclistRequestDTO requestDTO) {
         CyclistResponseDTO responseDTO = cyclistService.update(id, requestDTO);
         if (responseDTO != null) {
@@ -51,7 +51,7 @@ public class CyclistController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteCyclist(@PathVariable Long id) {
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
         cyclistService.delete(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }

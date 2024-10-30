@@ -4,12 +4,14 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @Getter
 @Setter
+@Accessors(chain = true)
 @Entity
 @Table(name = "competition")
 public class Competition {
