@@ -46,7 +46,20 @@ public class TeamService implements TeamServiceI {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public TeamResponseDTO update(Long id, TeamRequestDTO requestDTO) {
+        Optional<Team> existingTeam = teamRepository.findById(id);
 
+        if (existingTeam.isPresent()) {
+            Team teamToUpdate = existingTeam.get();
+            teamToUpdate.setTeamName(requestDTO.getTeamName());
+            teamToUpdate.setNationality(requestDTO.getNationality());
+            teamRepository.save(teamToUpdate);
+
+            return teamMapper.toResponseDTO(teamToUpdate);
+        }
+        return null;
+    }
 
     @Override
     public void delete(Long id) {

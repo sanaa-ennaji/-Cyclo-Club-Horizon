@@ -9,7 +9,6 @@ import org.sanaa.brif6.CCH.entity.Competition;
 import org.sanaa.brif6.CCH.mapper.CompetitionMapper;
 import org.sanaa.brif6.CCH.repository.CompetetionRepository;
 import org.sanaa.brif6.CCH.service.Interface.CompetitionServiceI;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 

@@ -12,6 +12,5 @@ public interface TeamServiceI {
     TeamResponseDTO  getById (Long id);
     List<TeamResponseDTO> getAll ();
     void  delete (Long id);
-
-
+    TeamResponseDTO update(Long id, TeamRequestDTO requestDTO);
 }
