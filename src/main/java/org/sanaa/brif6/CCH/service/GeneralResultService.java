@@ -29,9 +29,9 @@ import java.util.stream.Collectors;
 public class GeneralResultService implements GeneralResultServiceI {
 
     private final GeneralResultRepository generalResultRepository;
-    private final GeneralResultMapper generalResultMapper = Mappers.getMapper(GeneralResultMapper.class);
-    private final CyclistRepository cyclistRepository;
-    private final CompetetionRepository competitionRepository;
+    private final GeneralResultMapper generalResultMapper;
+    private final CyclistRepository cyclistRepository; //service
+    private final CompetetionRepository competitionRepository; // service
 
     @Override
     public GeneralResultResponseDTO create(GeneralResultRequestDTO requestDTO) {

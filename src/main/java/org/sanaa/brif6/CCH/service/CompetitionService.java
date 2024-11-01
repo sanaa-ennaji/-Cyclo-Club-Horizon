@@ -2,7 +2,6 @@ package org.sanaa.brif6.CCH.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.mapstruct.factory.Mappers;
 import org.sanaa.brif6.CCH.dto.Request.CompetitionRequestDTO;
 import org.sanaa.brif6.CCH.dto.Response.CompetitionResponseDTO;
 import org.sanaa.brif6.CCH.entity.Competition;
@@ -27,10 +26,14 @@ public class CompetitionService implements CompetitionServiceI {
 
     @Override
     public CompetitionResponseDTO create(CompetitionRequestDTO requestDTO) {
+        if (requestDTO == null) {
+            throw new IllegalArgumentException("Request DTO cannot be null");
+        }
         Competition competition = competitionMapper.toEntity(requestDTO);
         competition = competitionRepository.save(competition);
         return competitionMapper.toResponseDTO(competition);
     }
+
 
 
     @Override

@@ -62,6 +62,7 @@ public class ResultService  implements ResultServiceI {
                 .collect(Collectors.toList());
     }
 
+
     @Override
     public void delete(Long cyclistId, Long stageId) {
         EmbeddedResult id = new EmbeddedResult();

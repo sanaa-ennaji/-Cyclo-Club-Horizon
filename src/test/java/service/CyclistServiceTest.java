@@ -8,8 +8,10 @@ import org.mockito.MockitoAnnotations;
 import org.sanaa.brif6.CCH.dto.Request.CyclistRequestDTO;
 import org.sanaa.brif6.CCH.dto.Response.CyclistResponseDTO;
 import org.sanaa.brif6.CCH.entity.Cyclist;
+import org.sanaa.brif6.CCH.entity.Team;
 import org.sanaa.brif6.CCH.mapper.CyclistMapper;
 import org.sanaa.brif6.CCH.repository.CyclistRepository;
+import org.sanaa.brif6.CCH.repository.TeamRepository;
 import org.sanaa.brif6.CCH.service.CyclistService;
 
 import java.util.Arrays;
@@ -24,6 +26,9 @@ public class CyclistServiceTest {
     private CyclistRepository cyclistRepository;
 
     @Mock
+    private TeamRepository teamRepository;
+
+    @Mock
     private CyclistMapper cyclistMapper;
 
     @InjectMocks
@@ -31,23 +36,25 @@ public class CyclistServiceTest {
 
     @BeforeEach
     void setUp() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
     }
 
     @Test
     void testCreateCyclist() {
         CyclistRequestDTO requestDTO = new CyclistRequestDTO();
+        requestDTO.setTeamId(1L);
+
         Cyclist cyclist = new Cyclist();
         CyclistResponseDTO responseDTO = new CyclistResponseDTO();
-
+        Team team = new Team();
+        when(teamRepository.findById(1L)).thenReturn(Optional.of(team));
         when(cyclistMapper.toEntity(requestDTO)).thenReturn(cyclist);
         when(cyclistRepository.save(cyclist)).thenReturn(cyclist);
         when(cyclistMapper.toResponseDTO(cyclist)).thenReturn(responseDTO);
-
         CyclistResponseDTO result = cyclistService.create(requestDTO);
-
         assertNotNull(result);
         verify(cyclistRepository, times(1)).save(cyclist);
+        verify(teamRepository, times(1)).findById(1L);
     }
 
     @Test

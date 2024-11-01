@@ -10,6 +10,7 @@ public class CyclistResponseDTO {
     private String name;
     private  String LastName;
     private int   age ;
+    // validation
 
 
 }
